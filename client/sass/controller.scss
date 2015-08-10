@@ -1,0 +1,24 @@
+@import 'defines';
+
+.board-ctrl {
+  .grid {
+    display: table;
+    width: 100%;
+    border-spacing:.5em;
+  }
+
+  .t-row {
+    display: table-row;
+  }
+
+  .t-col {
+    padding:1em;
+    width:25%;
+    display:table-cell;
+    border:#f0f0f0 1px solid;
+
+    &.selected {
+      background: #eee;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="board">
+  <div class="titles">
+    <div ng-repeat="category in categories" class="title">
+      <div class="tile">
+        {{category}}
+      </div>
+    </div>
+  </div>
+
+  <div class="points-row" ng-repeat="point in points" >
+    <div ng-repeat="category in categories" class="point">
+      <div class="tile">
+        <span ng-if="available[$index][$parent.$index]">
+          {{point}}
+        </span>
+        <span ng-if="!available[$index][$parent.$index]">
+          &nbsp;
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+@import 'defines';
+
+.full-screen {
+  background: $bg-color;
+  font-size: 36px;
+  height:100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+
+  .text {
+    padding: 0 50px;
+  }
+}

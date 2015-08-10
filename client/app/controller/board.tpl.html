@@ -1,0 +1,26 @@
+<div class="board-ctrl">
+
+  <div class="grid">
+    <div class="t-row" ng-repeat="point in points">
+      <div class="t-col" ng-repeat="category in categories" ng-class="{selected: selected[0] == $index && selected[1] == $parent.$index}"
+           ng-click="select($index,$parent.$index)">
+        <span ng-if="available[$index][$parent.$index]">
+          {{point}}
+        </span>
+        <span ng-if="!available[$index][$parent.$index]">
+          &nbsp;
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-8">
+      {{categories[selected[0]]}} for {{points[selected[1]]}}
+    </div>
+    <div class="col-xs-4">
+      <input class="btn btn-default" ng-click="selectPoint();" type="button" value="Select">
+    </div>
+  </div>
+
+</div>

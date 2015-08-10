@@ -1,0 +1,44 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Starter</title>
+
+    <!-- build:css /css/libs.css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="/css/app-cssmin.css"/>
+
+    <!-- Version: @@gitsha@@ -->
+
+  </head>
+
+  <body>
+
+    <div class="main-container" ui-view></div>
+
+    <!-- build:js /js/libs.js -->
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-gettext/dist/angular-gettext.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/env.js"></script>
+    <script type="text/javascript" src="/js/app-build.js"></script>
+
+    <!-- if-dev -->
+    <script src="//localhost:35729/livereload.js"></script>
+    <!-- /if-dev -->
+
+  </body>
+
+</html>
