@@ -26,6 +26,12 @@ angular.module('controller', [])
         url: '/board',
         templateUrl: '/app/controller/board.tpl.html',
         controller: 'GameBoardController'
+      })
+
+      .state('ctrl.question', {
+        url: '/question',
+        templateUrl: '/app/controller/question.tpl.html',
+        controller: 'GameQuestionController'
       });
 
   }])
@@ -51,7 +57,7 @@ angular.module('controller', [])
     };
   }])
 
-  .controller('GameBoardController', ['$scope', '$http', function($scope, $http) {
+  .controller('GameBoardController', ['$scope', '$http', '$state', function($scope, $http, $state) {
     $http.get('/control/board/get').success(function(data) {
       $scope.categories = data.categories;
       $scope.points = data.points;
@@ -67,9 +73,18 @@ angular.module('controller', [])
     };
 
     $scope.selectPoint = function() {
-      $http.get('/control/board/select/' + $scope.selected[0] + '/' + $scope.selected[1]).success(function(data) {
+      $http.get('/control/board/select/' + $scope.selected[0] + '/' + $scope.selected[1]).success(function() {
         window.console.log('selected');
+        $state.go('ctrl.question');
       });
     };
 
+  }])
+
+  .controller('GameQuestionController', ['$scope', '$http', '$state', function($scope, $http, $state) {
+    $scope.showBoard = function() {
+      $http.get('/control/board/show').success(function() {
+        $state.go('ctrl.board');
+      });
+    };
   }]);

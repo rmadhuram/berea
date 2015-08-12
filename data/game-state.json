@@ -1,16 +1,16 @@
 {
 	"currentRound": 0,
-	"currentState": 4,
+	"currentState": 3,
 	"currentQuestion": [
 		0,
-		1
+		2
 	],
 	"boardState": null,
 	"available": [
 		[
 			0,
-			0,
 			1,
+			0,
 			0,
 			1
 		],
