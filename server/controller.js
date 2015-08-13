@@ -16,7 +16,7 @@ exports.init = function(app, io, dataFile) {
       currentState: states.INTRO,
       currentQuestion: null,
       boardState: null,
-      available: [[0,1,1,0,1], [0,0,0,1,0], [1,1,1,0,1], [1,1,1,1,1]],
+      available: [[1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1]],
       teamNames: ['Team A', 'Team B'],
       scores: [0, 0]
     },

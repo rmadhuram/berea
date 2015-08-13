@@ -20,11 +20,13 @@ angular.module('game')
 
 
     function showCat(n) {
-      if (n == 4) return;
+      if (n === 4) {
+        return;
+      }
       $('.pt-page-' + n).addClass('pt-page-scaleDown');
-      $('.pt-page-' + (n+1)).addClass('pt-page-current pt-page-moveFromRight pt-page-ontop');
+      $('.pt-page-' + (n + 1)).addClass('pt-page-current pt-page-moveFromRight pt-page-ontop');
       $timeout(function() {
-        showCat(n+1);
+        showCat(n + 1);
       }, 2000);
     }
 
