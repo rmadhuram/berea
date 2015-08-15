@@ -15,7 +15,7 @@ angular.module('game')
 
   }])
 
-  .controller('GameInitCtrl', ['$scope', '$state', function($scope, $state) {
+  .controller('GameInitCtrl', ['$scope', '$state', '$rootScope', function($scope, $state, $rootScope) {
     window.console.log('Game init controller');
 
     var socket = io.connect();
@@ -35,8 +35,13 @@ angular.module('game')
       $state.transitionTo('game.question');
     });
 
-    socket.on('showAnswer', function () {
-      window.console.log('show answer!');
-      $state.transitionTo('game.answer');
+    socket.on('showAnswer', function(score) {
+      window.console.log('show answer !', score);
+      $state.transitionTo('game.answer', score);
+    });
+
+    socket.on('scoreRefresh', function() {
+      window.console.log('emit score refresh');
+      $rootScope.$broadcast('scoreRefresh');
     });
   }]);

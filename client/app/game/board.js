@@ -15,13 +15,24 @@ angular.module('game')
 
   }])
 
-  .controller('GameBoardCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('GameBoardCtrl', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
     window.console.log('GameBoardCtrl controller');
+
+    $scope.scores = [0,0];
 
     $http.get('/control/board/get').success(function(data) {
       $scope.categories = data.categories;
       $scope.points = data.points;
       $scope.available = data.available;
     });
+
+    function refreshScores() {
+      $http.get('/control/scores').success(function(data) {
+        $scope.scores = data;
+      });
+    }
+
+    refreshScores();
+    $rootScope.$on('scoreRefresh', refreshScores);
 
   }]);

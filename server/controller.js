@@ -18,7 +18,8 @@ exports.init = function(app, io, dataFile) {
       boardState: null,
       available: [[1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1]],
       teamNames: ['Team A', 'Team B'],
-      scores: [0, 0]
+      scores: [0, 0],
+      questionStartTime: 0
     },
 
     gameData;
@@ -31,7 +32,8 @@ exports.init = function(app, io, dataFile) {
   // load game state if any present.
   if (fs.existsSync(STATE_FILE)) {
     var data = fs.readFileSync(STATE_FILE, 'UTF-8');
-    console.log(data);
+    gameState = JSON.parse(data);
+    console.log('Current round: ' + gameState.currentRound);
   } else {
     console.log('No state file present.');
   }
@@ -64,7 +66,8 @@ exports.init = function(app, io, dataFile) {
 
   // Get current board state
   app.get('/control/board/get', function(req, res) {
-    console.log('get current board!');
+    console.log('get current board! ', gameState);
+
     var currentRoundData = gameData.rounds[gameState.currentRound],
       payload = {
         points: currentRoundData.points
@@ -86,6 +89,7 @@ exports.init = function(app, io, dataFile) {
 
     console.log('select question: ' + req.param('cat') + ' , ' + req.param('points'));
     io.emit('showQuestion');
+    gameState.questionStartTime = new Date().getTime();
     gameState.currentState = states.SHOW_QUESTION;
     gameState.currentQuestion = [+cat, +points];
     gameState.available[cat][points] = 0;
@@ -99,6 +103,7 @@ exports.init = function(app, io, dataFile) {
       currentQuestion = gameState.currentQuestion;
 
     var question = currentRoundData.categories[currentQuestion[0]].questions[currentQuestion[1]];
+    question.points = currentRoundData.points[currentQuestion[1]];
     res.json(question);
 
   });
@@ -108,6 +113,76 @@ exports.init = function(app, io, dataFile) {
     io.emit('showAnswer');
     gameState.currentState = states.SHOW_ANSWER;
 
+    persistState();
+    res.json("OK");
+  });
+
+  // Get scores
+  app.get('/control/scores', function(req, res) {
+    res.json(gameState.scores);
+  });
+
+  // Add score for current question.
+  // Time is kept from when a question is selected.
+  // fraction is for other team scoring.
+  app.get('/control/score/add/:team/:fraction', function(req, res) {
+    var currentTime = new Date().getTime(),
+      addedScore = 0,
+      fraction = +req.param('fraction'),
+      team = +req.param('team');
+
+    if (gameState.questionStartTime != 0) {
+      var currentRoundData = gameData.rounds[gameState.currentRound],
+        currentQuestion = gameState.currentQuestion,
+        points = currentRoundData.points[currentQuestion[1]],
+        timeReduction = 0;
+
+      var elapsed = (currentTime - gameState.questionStartTime) / 1000;
+      if (elapsed < 15) {
+        timeReduction = 1;
+      } else if (elapsed < 30) {
+        timeReduction = 0.8;
+      } else if (elapsed < 45) {
+        timeReduction = 0.6;
+      } else if (elapsed < 60) {
+        timeReduction = 0.4;
+      }
+
+      points = timeReduction * points;
+      addedScore = (points * fraction) / 100;
+
+      gameState.scores[team] += addedScore;
+      persistState();
+    }
+
+    console.log('show answer emit!!');
+    io.emit('showAnswer', {team: team, scored: addedScore});
+    gameState.currentState = states.SHOW_ANSWER;
+
+    res.json(addedScore);
+
+  });
+
+  // Adjust score
+  app.get('/control/score/adjust/:team/:delta', function(req, res) {
+    var delta = +req.param('delta'),
+      team = +req.param('team');
+
+    gameState.scores[team] += delta;
+    persistState();
+    io.emit('scoreRefresh');
+    res.json('OK');
+  });
+
+
+  // Transition to next round
+  app.get('/control/round/next', function(req, res) {
+    gameState.currentRound++;
+    gameState.available = [[1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1], [1,1,1,1,1]];
+
+    if (gameState.currentRound == 1) {
+      io.emit('showBoard');
+    }
     persistState();
     res.json("OK");
   });

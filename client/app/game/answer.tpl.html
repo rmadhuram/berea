@@ -1,3 +1,8 @@
 <div class="full-screen answer">
-  <div class="text">{{answer}}</div>
+  <div>
+    <div ng-if="score" class="score">
+      Team {{score.team}} scored {{score.scored}} points.
+    </div>
+    <div class="text">{{answer}}</div>
+  </div>
 </div>

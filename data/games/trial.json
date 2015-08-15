@@ -9,24 +9,24 @@
           "name": "Psalms",
           "questions": [
             {
-              "question": "Psalms 23 starts with this verse.",
-              "answer": "The Lord is my shepherd. I shall not want."
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
             },
             {
-              "question": "Psalms 23 starts with this verse.",
-              "answer": "The Lord is my shepherd. I shall not want."
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
             },
             {
-              "question": "Psalms 23 starts with this verse.",
-              "answer": "The Lord is my shepherd. I shall not want."
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
             },
             {
-              "question": "Psalms 23 starts with this verse.",
-              "answer": "The Lord is my shepherd. I shall not want."
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
             },
             {
-              "question": "Psalms 23 starts with this verse.",
-              "answer": "The Lord is my shepherd. I shall not want."
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
             }
           ]
         },
@@ -82,6 +82,112 @@
         },
         {
           "name": "Parables",
+          "questions": [
+            {
+              "question": "The kingdom of heaven is like leaven, which a woman took and did this.",
+              "answer": "hid in three measures of meal till it was all leavened (Mat 13:33)"
+            },
+            {
+              "question": "The kingdom of heaven is like leaven, which a woman took and did this.",
+              "answer": "hid in three measures of meal till it was all leavened (Mat 13:33)"
+            },
+            {
+              "question": "The kingdom of heaven is like leaven, which a woman took and did this.",
+              "answer": "hid in three measures of meal till it was all leavened (Mat 13:33)"
+            },
+            {
+              "question": "The kingdom of heaven is like leaven, which a woman took and did this.",
+              "answer": "hid in three measures of meal till it was all leavened (Mat 13:33)"
+            },
+            {
+              "question": "The kingdom of heaven is like leaven, which a woman took and did this.",
+              "answer": "hid in three measures of meal till it was all leavened (Mat 13:33)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "points": [100, 200, 300, 400, 500],
+      "categories": [
+        {
+          "name": "Psalms 2",
+          "questions": [
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            }
+          ]
+        },
+        {
+          "name": "Bible 2",
+          "questions": [
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            }
+          ]
+        },
+        {
+          "name": "Crossword Clues 'A'",
+          "questions": [
+            {
+              "question": "According to I Timothy 4:1, 'The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons' (8)",
+              "answer": "Apostasy"
+            },
+            {
+              "question": "According to I Timothy 4:1, 'The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons' (8)",
+              "answer": "Apostasy"
+            },
+            {
+              "question": "According to I Timothy 4:1, 'The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons' (8)",
+              "answer": "Apostasy"
+            },
+            {
+              "question": "According to I Timothy 4:1, 'The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons' (8)",
+              "answer": "Apostasy"
+            },
+            {
+              "question": "According to I Timothy 4:1, 'The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons' (8)",
+              "answer": "Apostasy"
+            }
+          ]
+        },
+        {
+          "name": "Parables 2",
           "questions": [
             {
               "question": "The kingdom of heaven is like leaven, which a woman took and did this.",

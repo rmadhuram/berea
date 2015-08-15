@@ -12,9 +12,23 @@ angular.module('game')
 
   }])
 
-  .controller('QuestionCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('QuestionCtrl', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
     window.console.log('show question controller');
+    $scope.time = 60;
+    $scope.score = 300;
+
     $http.get('/control/question/get').success(function(data) {
       $scope.question = data.question;
     });
+
+    function decreaseTime() {
+      $timeout(function() {
+        $scope.time--;
+        if ($scope.time > 0) {
+          decreaseTime();
+        }
+      }, 1000);
+    }
+
+    decreaseTime();
   }]);

@@ -9,8 +9,21 @@
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
 
+  &.answer {
+    text-align: center;
+
+    .score {
+      color: $text-color;
+      margin-bottom: 50px;
+    }
+
+    .text {
+      font-size:calc(100% + 2vw);
+    }
+  }
+
   .text {
-    padding: 0 50px;
+    padding: 0 100px;
   }
 
   .intro {
@@ -21,6 +34,11 @@
       font-size:calc(100% + 4vw);
     }
   }
+
+  &.question {
+    font-size: calc(100% + 4vw);
+    text-align: center;
+  }
 }
 
 .categories {
@@ -29,3 +47,36 @@
     text-align: center;
   }
 }
+
+.question-screen {
+  .timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    color: $text-color;
+    padding-left: 30px;
+    font-size: calc(100% + 6vw);
+  }
+
+  .time-band {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background: $text-color;
+    width: 100%;
+  }
+
+  .score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    color: $text-color;
+    padding-right: 30px;
+    font-size: calc(100% + 6vw);
+  }
+}
+

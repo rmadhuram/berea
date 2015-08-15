@@ -62,9 +62,20 @@ angular.module('controller', [])
       $scope.categories = data.categories;
       $scope.points = data.points;
       $scope.available = data.available;
+      var allClear = true;
+      _.each($scope.available, function(cat) {
+        _.each(cat, function(point) {
+          if (point == 1) {
+            allClear = false;
+          }
+        });
+      })
+
+      $scope.allClear = allClear;
     });
 
     $scope.selected = [null, null];
+    $scope.allClear = false;
 
     $scope.select = function(cat, point) {
       if ($scope.available[cat][point]) {
@@ -79,12 +90,26 @@ angular.module('controller', [])
       });
     };
 
+    $scope.nextRound = function() {
+      $http.get('/control/round/next');
+    }
+
+    $scope.adjustScore = function(team, scoreDelta) {
+      console.log('add ' + scoreDelta + ' to ' + team);
+      $http.get('/control/score/adjust/' + team + '/' + scoreDelta);
+    }
+
   }])
 
   .controller('GameQuestionController', ['$scope', '$http', '$state', function($scope, $http, $state) {
-    $scope.showBoard = function() {
-      $http.get('/control/board/show').success(function() {
-        $state.go('ctrl.board');
+    $http.get('/control/question/get').success(function(data) {
+      $scope.question = data.question;
+      $scope.answer = data.answer;
+    });
+
+    $scope.addScore = function(team, percent) {
+      $http.get('/control/score/add/' + team + '/' + percent).success(function() {
+        $state.go('ctrl.showBoard');
       });
     };
   }]);

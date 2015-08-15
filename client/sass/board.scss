@@ -1,34 +1,56 @@
 @import 'defines';
 
 .board {
-  position:fixed !important;
-  position:absolute;
-  top: 10px;
-  right: 0px;
-  bottom:10px;
-  left:0;
 
-  .titles,
-  .points-row {
-    height: 16.67%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .title,
-  .point {
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    padding: 10px;
+  .scores {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: #321d00;
+    color: #c28a3b;
+    font-size: 36px;
+    padding: 20px;
+    box-shadow: 0 5px 5px 10px #593400;
   }
 
   .tile {
     background: $bg-color;
-    height: 100%;
-    padding: 10px;
-    color: $text-color;
+    padding: 20px;
+    color: #ddd;
     font-size: 36px;
     text-align: center;
+    border: 2px solid #3a3788;
+  }
+
+  .grid {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 90vh;
+    border-spacing:.5em;
+  }
+
+  .titles {
+    text-transform: uppercase;
+
+    .tile {
+      background: #242171;
+    }
+  }
+
+  .t-row {
+    display: table-row;
+  }
+
+  .t-col {
+    padding:1em;
+    width:25%;
+    display:table-cell;
+
+    &.selected {
+      background: #eee;
+    }
   }
 }
