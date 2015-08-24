@@ -33,11 +33,30 @@
       text-transform: uppercase;
       font-size:calc(100% + 4vw);
     }
+
+    h2 {
+      margin-top: 150px;
+      text-transform: uppercase;
+      font-size:calc(50% + 3vw);
+      color: $text-color;
+    }
   }
 
   &.question {
     font-size: calc(100% + 4vw);
     text-align: center;
+  }
+
+  &.image-question {
+    font-size: calc(50% + 3vw);
+
+    .row {
+      margin-top: 50px;
+    }
+
+    .text {
+      margin-top: 100px;
+    }
   }
 }
 
@@ -60,13 +79,51 @@
     font-size: calc(100% + 6vw);
   }
 
+  .time-band-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background: #aaa;
+    border-bottom: 2px dotted #eee;
+    width: 100%;
+
+    &.red {
+      background: #d32800;
+      border-bottom: 2px dotted #ff6f4d;
+      transition: background 4s;
+    }
+  }
+
   .time-band {
     position: absolute;
+    z-index: 100;
     top: 0;
     left: 0;
     height: 15px;
     background: $text-color;
     width: 100%;
+
+    &.green {
+      background: #009153;
+      border-bottom: 2px dotted #37b47e;
+    }
+
+    &.yellow {
+      background: #c4d100;
+      border-bottom: 2px dotted #f1fc4d;
+    }
+
+    &.orange {
+      background: #d38a00;
+      border-bottom: 2px dotted #ffc24d;
+    }
+
+    &.red {
+      background: #d32800;
+      border-bottom: 2px dotted #ff6f4d;
+    }
   }
 
   .score {

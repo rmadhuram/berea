@@ -65,11 +65,11 @@ angular.module('controller', [])
       var allClear = true;
       _.each($scope.available, function(cat) {
         _.each(cat, function(point) {
-          if (point == 1) {
+          if (point === 1) {
             allClear = false;
           }
         });
-      })
+      });
 
       $scope.allClear = allClear;
     });
@@ -91,13 +91,14 @@ angular.module('controller', [])
     };
 
     $scope.nextRound = function() {
-      $http.get('/control/round/next');
-    }
+      $http.get('/control/round/next').success(function() {
+        $state.go('ctrl.init');
+      });
+    };
 
     $scope.adjustScore = function(team, scoreDelta) {
-      console.log('add ' + scoreDelta + ' to ' + team);
       $http.get('/control/score/adjust/' + team + '/' + scoreDelta);
-    }
+    };
 
   }])
 
@@ -112,4 +113,17 @@ angular.module('controller', [])
         $state.go('ctrl.showBoard');
       });
     };
+
+    $scope.addBonus = function(team) {
+      $http.get('/control/score/bonus/' + team).success(function() {
+        $state.go('ctrl.showBoard');
+      });
+    };
+
+    $scope.pass = function() {
+      $http.get('/control/score/add/0/0').success(function() {
+        $state.go('ctrl.showBoard');
+      });
+    };
+
   }]);

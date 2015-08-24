@@ -13,6 +13,6 @@ angular.module('game', [])
 
   }])
 
-  .controller('GameCtrl', ['$scope', function($scope) {
+  .controller('GameCtrl', [function() {
      window.console.log('Game controller');
   }]);

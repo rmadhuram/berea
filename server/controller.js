@@ -1,6 +1,7 @@
-exports.init = function(app, io, dataFile) {
+exports.init = function(app, io, dataDir) {
 
   var fs = require('fs'),
+    express = require('express'),
     STATE_FILE = './data/game-state.json',
 
     states = {
@@ -39,9 +40,11 @@ exports.init = function(app, io, dataFile) {
   }
 
   // load game data.
-  if (fs.existsSync(dataFile)) {
-    var data = fs.readFileSync(dataFile, 'UTF-8');
+  if (fs.existsSync(dataDir) && fs.existsSync(dataDir + '/game.json')) {
+    var data = fs.readFileSync(dataDir + '/game.json', 'UTF-8');
     gameData = JSON.parse(data);
+
+    app.use('/assets', express.static(dataDir));
   } else {
     console.log('No data file present.');
     process.exit(1);
@@ -154,6 +157,28 @@ exports.init = function(app, io, dataFile) {
       gameState.scores[team] += addedScore;
       persistState();
     }
+
+    console.log('show answer emit!!');
+    io.emit('showAnswer', {team: team, scored: addedScore});
+    gameState.currentState = states.SHOW_ANSWER;
+
+    res.json(addedScore);
+
+  });
+
+  app.get('/control/score/bonus/:team', function(req, res) {
+    var currentTime = new Date().getTime(),
+      addedScore = 0,
+      team = +req.param('team');
+
+    var currentRoundData = gameData.rounds[gameState.currentRound],
+      currentQuestion = gameState.currentQuestion,
+      points = currentRoundData.points[currentQuestion[1]];
+
+    addedScore = (points * 0.4);
+
+    gameState.scores[team] += addedScore;
+    persistState();
 
     console.log('show answer emit!!');
     io.emit('showAnswer', {team: team, scored: addedScore});

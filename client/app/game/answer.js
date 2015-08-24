@@ -16,9 +16,12 @@ angular.module('game')
     window.console.log('show answer controller');
     $http.get('/control/question/get').success(function(data) {
       $scope.answer = data.answer;
-      $scope.score = {
-        team: $stateParams.team === '0' ? 'A' : 'B',
-        scored: $stateParams.scored
-      };
+
+      if ($stateParams.scored > 0) {
+        $scope.score = {
+          team: $stateParams.team === '0' ? 'A' : 'B',
+          scored: $stateParams.scored
+        };
+      }
     });
   }]);

@@ -1,5 +1,6 @@
 <div class="question-screen">
-  <div class="time-band" style="width: {{time*100/60}}%">
+  <div class="time-band-bg {{expireClass}}"></div>
+  <div class="time-band {{timeClass}}" style="width: {{time*100/60}}%">
   </div>
   <div class="timer">
     {{time}}
@@ -7,7 +8,19 @@
   <div class="score">
     {{score}}
   </div>
-  <div class="full-screen question">
-    <div class="text">{{question}}</div>
+  <div ng-if="question.image" class="full-screen question image-question">
+    <div class="row">
+      <div class="col-md-4">
+        <img height="700" src="/assets{{question.image}}">
+      </div>
+      <div class="col-md-8">
+        <div class="text">{{question.question}}</div>
+      </div>
+    </div>
+  </div>
+  <div ng-if="!question.image" class="full-screen question">
+    <div>
+      <div class="text">{{question.question}}</div>
+    </div>
   </div>
 </div>

@@ -4,7 +4,7 @@ var express = require('express'),
   path = require('path');
 
 var app = module.exports = express(),
-  dataFile = process.argv[2];
+  dataDir = process.argv[2];
 
 app.set('port', process.env.PORT || 8080);
 app.use(express.logger('dev'));
@@ -30,7 +30,7 @@ io.on('connection', function (socket) {
 });
 
 var controller = require('./server/controller');
-controller.init(app, io.sockets, dataFile);
+controller.init(app, io.sockets, dataDir);
 
 // redirect all others to the public/index.html (HTML5 history)
 app.get(/^(.*)$/, function(req, res, next){
