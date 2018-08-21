@@ -1,0 +1,1 @@
+angular.module("env",[]).factory("env",[function(){return{apiServer:"http://localhost:8100/"}}]);

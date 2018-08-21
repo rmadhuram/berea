@@ -1,35 +1,35 @@
 {
-	"currentRound": 1,
-	"currentState": 3,
+	"currentRound": 0,
+	"currentState": 2,
 	"currentQuestion": [
 		1,
-		2
+		0
 	],
 	"boardState": null,
 	"available": [
 		[
 			0,
+			1,
+			0,
+			0,
+			1
+		],
+		[
+			0,
 			0,
 			0,
 			0,
 			0
 		],
 		[
-			1,
-			1,
+			0,
+			0,
 			0,
 			0,
 			0
 		],
 		[
-			1,
 			0,
-			1,
-			0,
-			0
-		],
-		[
-			1,
 			0,
 			0,
 			0,
@@ -41,8 +41,8 @@
 		"Team B"
 	],
 	"scores": [
-		5500,
-		4450
+		1140,
+		1620
 	],
-	"questionStartTime": 1439633092191
+	"questionStartTime": 1534822935415
 }
