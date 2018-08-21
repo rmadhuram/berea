@@ -1,0 +1,12 @@
+.project
+.idea
+.tmp
+*.iml
+.scss-lint.yml
+.instance.pid
+nohup.out
+
+npm-debug.log
+node_modules
+bower_components
+dist
