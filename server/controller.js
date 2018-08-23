@@ -111,8 +111,10 @@ exports.init = function(app, io, dataDir) {
     var currentRoundData = gameData.rounds[gameState.currentRound],
       currentQuestion = gameState.currentQuestion;
 
+    console.log(currentQuestion)
     var question = currentRoundData.categories[currentQuestion[0]].questions[currentQuestion[1]];
     question.points = currentRoundData.points[currentQuestion[1]];
+    question.category = currentRoundData.categories[currentQuestion[0]].name
     res.json(question);
 
   });
@@ -218,5 +220,15 @@ exports.init = function(app, io, dataDir) {
     res.json("OK");
   });
 
+  // Show announcements
+  app.get('/control/announce/:id', function(req, res) {
+    io.emit('announce', req.param('id'))
+    res.json("OK");
+  });
 
+  // emit any generic event.
+  app.get('/control/emit/:event', function(req, res) {
+    io.emit(req.param('event'))
+    res.json('OK')
+  });
 };

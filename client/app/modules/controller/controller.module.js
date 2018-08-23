@@ -41,6 +41,16 @@ angular.module('controller', [])
   })
 
   .controller('RemoteInitController', function($scope, questionService, $state) {
+    $scope.play = () => questionService.emitEvent('play')
+
+    $scope.showRules = function() {
+      questionService.showAnnouncement(1)
+    };
+
+    $scope.showNext = function() {
+      questionService.emitEvent('next')
+    };
+
     $scope.showCat = function() {
       questionService.showCategories().then(function() {
         $state.go('root.ctrl.showBoard');

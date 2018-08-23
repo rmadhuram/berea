@@ -10,7 +10,7 @@ angular.module('game')
 
   })
 
-  .controller('GameBoardController', function($scope, questionService) {
+  .controller('GameBoardController', function($scope, $rootScope, questionService) {
     $scope.scores = [0,0];
 
     questionService.getBoard().then(res => {
@@ -20,13 +20,13 @@ angular.module('game')
     })
 
     function refreshScores() {
-      //$http.get('/control/scores').success(function(data) {
-      //  $scope.scores = data;
-      //});
+      questionService.getScores().then(res => {
+        $scope.scores = res.data
+      });
     }
 
     refreshScores();
-    //var on = $rootScope.$on('scoreRefresh', refreshScores);
-    //$scope.$on('$destroy',
+    var on = $rootScope.$on('scoreRefresh', refreshScores);
+    $scope.on = on // to avoid linter error
 
   });

@@ -21,6 +21,7 @@ gulp.task('styles', function() {
 });
 
 var buildStyles = function() {
+  console.log('Build styles!!')
   var sassOptions = {
     outputStyle: 'expanded',
     precision: 10

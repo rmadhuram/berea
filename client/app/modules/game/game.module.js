@@ -1,5 +1,3 @@
-import io from 'socket.io-client'
-
 angular.module('game', [])
   .config(function ($stateProvider) {
     'ngInject'
@@ -12,32 +10,8 @@ angular.module('game', [])
       });
 
   })
-  .controller('Game1Controller', function($scope, $state, $log, $rootScope) {
+  .controller('Game1Controller', function($log) {
     'ngInject'
 
     $log.info('Game');
-    var socket = io.connect();
-
-    socket.on('showCategories', function () {
-      $state.transitionTo('root.game.showcat');
-    });
-
-    socket.on('showBoard', function () {
-      $state.transitionTo('root.game.board');
-    });
-
-    socket.on('showQuestion', function () {
-      $log.info('show question!');
-      $state.transitionTo('root.game.question');
-    });
-
-    socket.on('showAnswer', function(score) {
-      $log.info('root.show answer !', score);
-      $state.transitionTo('root.game.answer', score);
-    });
-
-    socket.on('scoreRefresh', function() {
-      $log.info('emit score refresh');
-      $rootScope.$broadcast('scoreRefresh');
-    });
   });

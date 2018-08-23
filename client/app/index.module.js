@@ -10,6 +10,7 @@ import './modules/game/showcat.module';
 import './modules/game/board';
 import './modules/game/question';
 import './modules/game/answer';
+import './modules/game/announce';
 import './modules/controller/controller.module';
 import './config/env';
 
@@ -49,4 +50,5 @@ angular.module('jeopardy',
     });
 
     $rootScope.$on('$destroy', onStateChange);
-  });
+  })
+
