@@ -1,6 +1,5 @@
 /**
- * DSP v2.0
- * (c) C1X Inc. 2017
+ * Bible Jeopardy!
  */
 
 import './modules/services/services.module';
