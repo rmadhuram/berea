@@ -39,16 +39,26 @@ exports.init = function(app, io, dataDir) {
     console.log('No state file present.');
   }
 
-  // load game data.
-  if (fs.existsSync(dataDir) && fs.existsSync(dataDir + '/game.json')) {
-    var data = fs.readFileSync(dataDir + '/game.json', 'UTF-8');
-    gameData = JSON.parse(data);
+  function loadGame() {
+    // load game data.
+    if (fs.existsSync(dataDir) && fs.existsSync(dataDir + '/game.json')) {
+      var data = fs.readFileSync(dataDir + '/game.json', 'UTF-8');
+      gameData = JSON.parse(data);
 
-    app.use('/assets', express.static(dataDir));
-  } else {
-    console.log('No data file present.');
-    process.exit(1);
+      app.use('/assets', express.static(dataDir));
+    } else {
+      console.log('No data file present.');
+      process.exit(1);
+    }
   }
+
+  loadGame()
+
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
   app.get('/control/categories/show', function(req, res) {
     console.log('show categories!');
@@ -105,8 +115,10 @@ exports.init = function(app, io, dataDir) {
     var currentRoundData = gameData.rounds[gameState.currentRound],
       currentQuestion = gameState.currentQuestion;
 
+    console.log(currentQuestion)
     var question = currentRoundData.categories[currentQuestion[0]].questions[currentQuestion[1]];
     question.points = currentRoundData.points[currentQuestion[1]];
+    question.category = currentRoundData.categories[currentQuestion[0]].name
     res.json(question);
 
   });
@@ -212,5 +224,21 @@ exports.init = function(app, io, dataDir) {
     res.json("OK");
   });
 
+  // Show announcements
+  app.get('/control/announce/:id', function(req, res) {
+    io.emit('announce', req.param('id'))
+    res.json("OK");
+  });
 
+  // emit any generic event.
+  app.get('/control/emit/:event', function(req, res) {
+    io.emit(req.param('event'))
+    res.json('OK')
+  });
+
+  // Reload game data
+  app.get('/control/reload', function(req, res) {
+    loadGame()
+    res.json('OK')
+  });
 };

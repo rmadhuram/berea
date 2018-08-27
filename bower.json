@@ -1,0 +1,106 @@
+{
+  "name": "dsp-ui",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-cookies": "~1.5.3",
+    "angular-touch": "~1.5.3",
+    "angular-messages": "~1.5.3",
+    "angular-aria": "~1.5.3",
+    "bootstrap": "~3.2.0",
+    "lodash": "~3.10.1",
+    "jquery": "~2.1.4",
+    "angular-ui-router": "~0.4.2",
+    "angular-bootstrap": "~1.3.3",
+    "malarkey": "yuanqing/malarkey#~1.3.1",
+    "angular-toastr": "~1.5.0",
+    "bootstrap-daterangepicker": "^2.1.25",
+    "moment": "~2.10.6",
+    "moment-round": "~1.0.1",
+    "animate.css": "~3.4.0",
+    "angular": "~1.6.3",
+    "numeral": "~2.0.6",
+    "fontawesome": "4.7.0",
+    "angular-material": "^1.1.5",
+    "angular-gettext": "0.2.9",
+    "jquery.event.drag-drop": "https://github.com/downloads/threedubmedia/jquery.threedubmedia/jquery.event.drag-2.2.zip",
+    "slickgrid": "*",
+    "slick.js": "~1.3.15",
+    "highcharts-release": "6.0.3",
+    "highcharts-ng": "0.0.13",
+    "blockui": "*",
+    "angular-ui-select": "~0.19.6",
+    "material-icons": "0.1.0",
+    "select2": "~3.4.0",
+    "angular-sanitize": "^1.6.6",
+    "angular-ivh-treeview": "~1.0.4",
+    "angular-tree-control": "*",
+    "ng-file-upload": "3.0.2",
+    "d3": "^3.5.17",
+    "d3-cloud": "^1.2.5",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.3"
+  },
+  "overrides": {
+    "fontawesome": {
+      "main": [
+        "css/font-awesome.css",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/FontAwesome.otf",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
+      ]
+    },
+    "slickgrid": {
+      "main": [
+        "slick.core.js",
+        "slick.grid.js",
+        "slick.editors.js",
+        "plugins/slick.cellselectionmodel.js",
+        "plugins/slick.cellrangeselector.js",
+        "plugins/slick.cellrangedecorator.js",
+        "plugins/slick.rowselectionmodel.js",
+        "plugins/slick.rowmovemanager.js",
+        "controls/slick.columnpicker.js",
+        "slick.grid.css"
+      ]
+    },
+    "jquery.event.drag-drop": {
+      "main": [
+        "jquery.event.drag-2.2.js"
+      ]
+    },
+    "material-icons": {
+      "main": [
+        "css/material-icons.min.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "highcharts-ng": {
+      "main": [
+        "dist/highcharts-ng.js"
+      ]
+    },
+    "highcharts-release": {
+      "main": [
+        "highcharts.src.js",
+        "modules/sunburst.src.js"
+      ]
+    },
+    "d3-cloud": {
+      "main": [
+        "build/d3.layout.cloud.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "1.6.8"
+  }
+}

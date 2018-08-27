@@ -1,0 +1,68 @@
+<div class="board-ctrl">
+
+  <div class="grid">
+    <div class="t-row" ng-repeat="point in points">
+      <div class="t-col" ng-repeat="category in categories" ng-class="{selected: selected[0] == $index && selected[1] == $parent.$index}"
+           ng-click="select($index,$parent.$index)">
+        <span ng-if="available[$index][$parent.$index]">
+          {{point}}
+        </span>
+        <span ng-if="!available[$index][$parent.$index]">
+          &nbsp;
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div ng-if="!allClear">
+    <div class="row select">
+      <div class="col-xs-8">
+        {{categories[selected[0]]}} for {{points[selected[1]]}}
+      </div>
+      <div class="col-xs-4">
+        <input class="btn btn-default" ng-click="selectPoint();" type="button" value="Select">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <input type="text" size="10" ng-model="scoreDeltaA">
+      </div>
+      <div class="col-xs-3">
+        <input class="btn btn-default" ng-click="adjustScore(0, scoreDeltaA);" type="button" value="Add to A">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" size="10" ng-model="scoreDeltaB">
+      </div>
+      <div class="col-xs-3">
+        <input class="btn btn-default" ng-click="adjustScore(1, scoreDeltaB);" type="button" value="Add to B">
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div ng-if="!allClear">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+    <div class="row">
+      <div class="col-xs-8">
+        <input class="btn btn-default" ng-click="nextRound();" type="button" value="Next Round">
+      </div>
+    </div>
+
+
+</div>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-xs-8">
+    <input class="btn btn-default" ng-click="showScores();" type="button" value="Scores">
+  </div>
+</div>

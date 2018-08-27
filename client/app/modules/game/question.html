@@ -1,0 +1,35 @@
+<div class="question-screen">
+  <div class="time-band-bg {{expireClass}}"></div>
+  <div class="time-band {{timeClass}}" style="width: {{time*100/60}}%">
+  </div>
+  <div class="timer">
+    {{time}}
+  </div>
+  <div class="score">
+    {{score}}
+  </div>
+
+  <div class="category">
+    {{question.category}}
+  </div>
+  <div ng-if="question.image" class="full-screen question image-question" style="padding: 0">
+    <div class="img-container">
+      <img src="{{question.image}}" style="{{question.imageCss}}">
+    </div>
+
+    <div class="q-text" ng-bind-html="question.question">
+    </div>
+  </div>
+  <div ng-if="!question.image">
+    <div ng-if="question.video" class="full-screen question">
+      <video muted class="video-clue">
+        <source src="{{question.video}}" type="video/mp4">
+      </video>
+      <div ng-if="vidQuestion" class="q-text" ng-bind-html="question.question">
+      </div>
+    </div>
+    <div ng-if="!question.video" class="full-screen question">
+      <div class="text" ng-bind-html="question.question"></div>
+    </div>
+  </div>
+</div>
