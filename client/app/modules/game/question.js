@@ -14,34 +14,62 @@ angular.module('game')
     $scope.time = 60;
     $scope.timeClass = 'green';
 
+    var video,
+      timer;
+
     questionService.getQuestion().then( res => {
-      $scope.question = res.data;
+      var data = $scope.question = res.data;
       $scope.fullScore = $scope.score = res.data.points;
+
+      function decreaseTime() {
+        timer = $timeout(function() {
+          $scope.time--;
+          if ($scope.time > 0) {
+            if ($scope.time <= 15) {
+              $scope.score = 0.4 * $scope.fullScore;
+              $scope.timeClass = 'red';
+            } else if ($scope.time <= 30) {
+              $scope.score = 0.6 * $scope.fullScore;
+              $scope.timeClass = 'orange';
+            } else if ($scope.time <= 45) {
+              $scope.score = 0.8 * $scope.fullScore;
+              $scope.timeClass = 'yellow';
+            }
+            decreaseTime();
+          } else {
+            $scope.score = '';
+            $scope.time = '';
+            $scope.expireClass = 'red';
+          }
+        }, 1000);
+      }
+
+      if (data.video) {
+        $timeout(() => {
+          video = $('.video-clue')[0]
+          video.muted = false
+          video.play()
+        })
+
+        $timeout(() => {
+          video.volume = 0.3
+          $scope.vidQuestion = true
+          decreaseTime()
+        }, 10000)
+
+      } else {
+        decreaseTime();
+      }
 
     });
 
-    function decreaseTime() {
-      $timeout(function() {
-        $scope.time--;
-        if ($scope.time > 0) {
-          if ($scope.time <= 15) {
-            $scope.score = 0.4 * $scope.fullScore;
-            $scope.timeClass = 'red';
-          } else if ($scope.time <= 30) {
-            $scope.score = 0.6 * $scope.fullScore;
-            $scope.timeClass = 'orange';
-          } else if ($scope.time <= 45) {
-            $scope.score = 0.8 * $scope.fullScore;
-            $scope.timeClass = 'yellow';
-          }
-          decreaseTime();
-        } else {
-          $scope.score = '';
-          $scope.time = '';
-          $scope.expireClass = 'red';
-        }
-      }, 1000);
-    }
+    $scope.$on('$destroy', () => {
+      if (timer) {
+        $timeout.cancel(timer)
+      }
 
-    decreaseTime();
+      if (video) {
+        video.pause()
+      }
+    })
   });

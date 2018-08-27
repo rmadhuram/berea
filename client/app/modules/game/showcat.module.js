@@ -17,6 +17,8 @@ angular.module('game')
       showCat(0);
     })
 
+    var timer;
+
     function showCat(n) {
       $log.info('show cat ' + n)
       if (n === 4) {
@@ -25,9 +27,14 @@ angular.module('game')
       }
       $('.pt-page-' + n).addClass('pt-page-scaleDown').removeClass('pt-page-current pt-page-moveFromRight pt-page-ontop');
       $('.pt-page-' + (n + 1)).addClass('pt-page-current pt-page-moveFromRight pt-page-ontop');
-      $timeout(function() {
+      timer = $timeout(function() {
         showCat(n + 1);
       }, 2500);
+
+      $scope.$on('$destroy', () => {
+        if (timer)
+          $timeout.cancel(timer)
+      })
     }
 
   });

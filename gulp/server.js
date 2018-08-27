@@ -15,7 +15,7 @@ var connect = require('gulp-connect');
         path = require('path');
 
       var app = module.exports = express(),
-        dataDir = './data/trial';
+        dataDir = './data/cci2018';
 
       app.set('port', process.env.PORT || 8080);
       app.use(express.logger('dev'));

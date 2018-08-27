@@ -51,6 +51,7 @@
 
   &.image-question {
     font-size: calc(50% + 3vw);
+    line-height: calc(50% + 3vw);
 
     .row {
       margin-top: 50px;
@@ -131,7 +132,8 @@
   .category {
     position: fixed;
     top: 80px;
-    left: calc(50vw - (140px / 2));
+    left: calc(50vw - (1000px / 2));
+    width: 1000px;
     text-align: center;
     color: $text-color;
     text-transform: uppercase;

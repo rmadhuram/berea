@@ -39,16 +39,20 @@ exports.init = function(app, io, dataDir) {
     console.log('No state file present.');
   }
 
-  // load game data.
-  if (fs.existsSync(dataDir) && fs.existsSync(dataDir + '/game.json')) {
-    var data = fs.readFileSync(dataDir + '/game.json', 'UTF-8');
-    gameData = JSON.parse(data);
+  function loadGame() {
+    // load game data.
+    if (fs.existsSync(dataDir) && fs.existsSync(dataDir + '/game.json')) {
+      var data = fs.readFileSync(dataDir + '/game.json', 'UTF-8');
+      gameData = JSON.parse(data);
 
-    app.use('/assets', express.static(dataDir));
-  } else {
-    console.log('No data file present.');
-    process.exit(1);
+      app.use('/assets', express.static(dataDir));
+    } else {
+      console.log('No data file present.');
+      process.exit(1);
+    }
   }
+
+  loadGame()
 
   app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -229,6 +233,12 @@ exports.init = function(app, io, dataDir) {
   // emit any generic event.
   app.get('/control/emit/:event', function(req, res) {
     io.emit(req.param('event'))
+    res.json('OK')
+  });
+
+  // Reload game data
+  app.get('/control/reload', function(req, res) {
+    loadGame()
     res.json('OK')
   });
 };

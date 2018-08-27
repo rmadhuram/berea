@@ -1,4 +1,4 @@
-angular.module('controller', [])
+angular.module('controller', ['ngSanitize'])
   .config(function ($stateProvider) {
 
     $stateProvider
@@ -94,6 +94,9 @@ angular.module('controller', [])
     };
 
     $scope.selectPoint = function() {
+      var c = $scope.selected[0]
+      if (c == null) return
+
       questionService.selectPoint($scope.selected[0], $scope.selected[1]).then(() => {
         $state.go('root.ctrl.question');
       });
@@ -109,12 +112,15 @@ angular.module('controller', [])
       questionService.adjustScore(team, scoreDelta)
     };
 
+    $scope.showScores = () => {
+      questionService.emitEvent('scores')
+    }
+
   })
 
   .controller('RemoteQuestionController', function($scope, questionService, $state) {
     questionService.getQuestion().then(function(res) {
-      $scope.question = res.data.question;
-      $scope.answer = res.data.answer;
+      $scope.data = res.data;
     });
 
     $scope.addScore = function(team, percent) {

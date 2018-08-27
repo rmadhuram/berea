@@ -20,12 +20,11 @@ export function questionService($http) {
 
     selectPoint: (cat, points) => getFn('/control/board/select/' + cat + '/' + points)(),
 
-    //selectPoint: (cat, points) => { return $http.get(ENDPOINT + '/control/board/select/' + cat + '/' + points) },
-    adjustScore: (team, delta) => { return $http.get(ENDPOINT + '/control/score/adjust/' + team + '/' + delta) },
-    addScore: (team, percent) => { return $http.get(ENDPOINT + '/control/score/add/' + team + '/' + percent) },
-    addBonus: (team) => { return $http.get(ENDPOINT + '/control/score/bonus/' + team) },
+    adjustScore: (team, delta) => getFn('/control/score/adjust/' + team + '/' + delta)(),
+    addScore: (team, percent) => getFn('/control/score/add/' + team + '/' + percent)(),
+    addBonus: (team) => getFn('/control/score/bonus/' + team)(),
 
     nextRound: getFn('/control/round/next'),
-    emitEvent: (event) => getFn(ENDPOINT + '/control/emit/' + event)()
+    emitEvent: (event) => getFn('/control/emit/' + event)()
   }
 }

@@ -4,11 +4,18 @@
     <div class="col-xs-12">
       <div class="question">
         <div class="caption">Question:</div>
-        <div>{{question}}</div>
+        <div ng-bind-html="data.question"></div>
       </div>
       <div class="answer">
         <div class="caption">Answer:</div>
-        <div>{{answer}}</div>
+        <div>{{data.answer}}</div>
+      </div>
+
+      <div ng-if="data.notes">
+        <div class="notes">
+          <div class="caption">Notes:</div>
+          <div>{{data.notes}}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,13 +40,12 @@
         <input class="btn btn-default" ng-click="addBonus(1);" type="button" value="Team B 50%">
       </div>
     </div>
-  </div>
+    <hr>
 
-  <hr>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <input class="btn btn-default" ng-click="pass();" type="button" value="Pass">
+    <div class="row">
+      <div class="col-xs-12">
+        <input class="btn btn-default" ng-click="pass();" type="button" value="Pass">
+      </div>
     </div>
   </div>
 

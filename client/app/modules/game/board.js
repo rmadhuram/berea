@@ -10,7 +10,7 @@ angular.module('game')
 
   })
 
-  .controller('GameBoardController', function($scope, $rootScope, questionService) {
+  .controller('GameBoardController', function($scope, $rootScope, questionService, socketService, $state) {
     $scope.scores = [0,0];
 
     questionService.getBoard().then(res => {
@@ -28,5 +28,10 @@ angular.module('game')
     refreshScores();
     var on = $rootScope.$on('scoreRefresh', refreshScores);
     $scope.on = on // to avoid linter error
+
+    var socket = socketService.getSocket()
+    socket.on('scores', function() {
+      $state.transitionTo('root.game.scores');
+    })
 
   });

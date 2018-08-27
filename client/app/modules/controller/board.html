@@ -14,8 +14,8 @@
     </div>
   </div>
 
-  <div  ng-if="!allClear">
-    <div class="row">
+  <div ng-if="!allClear">
+    <div class="row select">
       <div class="col-xs-8">
         {{categories[selected[0]]}} for {{points[selected[1]]}}
       </div>
@@ -42,13 +42,27 @@
 
   <hr>
 
-  <div ng-if="allClear">
+  <div ng-if="!allClear">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
     <div class="row">
       <div class="col-xs-8">
         <input class="btn btn-default" ng-click="nextRound();" type="button" value="Next Round">
       </div>
     </div>
+
+
+</div>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-xs-8">
+    <input class="btn btn-default" ng-click="showScores();" type="button" value="Scores">
   </div>
-
-
 </div>
