@@ -12,12 +12,14 @@ The new version is completely rebuilt in JavaScript / node.js.
 
 You need to have node.js / npm / bower installed on your computer. 
 
-### Install npm packages (server side dependencies)
+#### 1. Install npm packages (server side dependencies)
 `npm install`
 
-### Install bower packages (client side dependencies)
+#### 2. Install bower packages (client side dependencies)
 `bower install`
 
+#### 3. Install gulp (if you don't have already)
 
+https://gulpjs.com/docs/en/getting-started/quick-start
 
 ## Running a Quiz Program
