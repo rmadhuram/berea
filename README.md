@@ -36,4 +36,4 @@ The show screen should be a browser window in full screen mode, and the controll
 screen should be a browser, preferably on a handheld device. Both devices should be on the
 **same** network.
 
-
+![Opening screen](docs/opening.png)
