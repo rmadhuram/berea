@@ -22,4 +22,9 @@ You need to have node.js / npm / bower installed on your computer.
 
 https://gulpjs.com/docs/en/getting-started/quick-start
 
+#### 4. Start server
+
+`gulp server`
+
 ## Running a Quiz Program
+
