@@ -47,7 +47,7 @@ The controller screen is initialized using this URL
 
 Replace localhost with the IP of the server on the controller screen.
 
-## Show Screen
+## Show Screens
 
 #### Opening Screen
 ![Opening screen](docs/opening.png)
@@ -69,3 +69,14 @@ Replace localhost with the IP of the server on the controller screen.
 
 #### A Video Clue
 ![](docs/scr6.png)
+
+## Control Screens
+
+#### Init Screen
+![](docs/ctrl-init.png)
+
+#### Board Screen
+![](docs/ctrl-board.png)
+
+#### Clue Screen
+![](docs/ctrl-question.png)
