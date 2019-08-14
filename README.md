@@ -58,3 +58,5 @@ Replace localhost with the IP of the server on the controller screen.
 ![](docs/scr3.png)
 
 ![](docs/scr4.png)
+
+![](docs/scr5.png)
