@@ -49,14 +49,20 @@ Replace localhost with the IP of the server on the controller screen.
 
 ## Show Screen
 
+#### Opening Screen
 ![Opening screen](docs/opening.png)
 
+#### Rules Screen
 ![](docs/scr1.png)
 
+#### Showing Categories
 ![](docs/scr2.png)
 
+#### Game Board
 ![](docs/scr3.png)
 
+#### A Clue
 ![](docs/scr4.png)
 
+#### An image clue
 ![](docs/scr5.png)
