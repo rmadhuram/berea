@@ -27,4 +27,13 @@ https://gulpjs.com/docs/en/getting-started/quick-start
 `gulp server`
 
 ## Running a Quiz Program
+Once the server is started, you are set to run a quiz show. Everything is browser based. 
+There are two screens:
+- A **show screen** visible to the audience, and most likely projected on to a big screen.
+- A **controller screen** visible only to the quiz master.
+
+The show screen should be a browser window in full screen mode, and the controller 
+screen should be a browser, preferably on a handheld device. Both devices should be on the
+**same** network.
+
 
