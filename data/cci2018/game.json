@@ -1,0 +1,344 @@
+{
+  "name": "CCI 2018",
+  "rounds": [
+    {
+      "name": "Trial Round",
+      "points": [100, 200, 300, 400, 500],
+      "categories": [
+        {
+          "name": "Psalms",
+          "questions": [
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            },
+            {
+              "question": "The number of verses in Psalm 23",
+              "answer": "6"
+            }
+          ]
+        },
+        {
+          "name": "Bible",
+          "questions": [
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            },
+            {
+              "question": "There are this many books in the New Testament",
+              "answer": "27 books"
+            }
+          ]
+        },
+        {
+          "name": "Anagrams",
+          "questions": [
+            {
+              "question": "At the start: CARE INTO",
+              "answer": "CARE INTO = CREATION"
+            },
+            {
+              "question": "At the start: CARE INTO",
+              "answer": "CARE INTO = CREATION"
+            },
+            {
+              "question": "At the start: CARE INTO",
+              "answer": "CARE INTO = CREATION"
+            },
+            {
+              "question": "At the start: CARE INTO",
+              "answer": "CARE INTO = CREATION"
+            },
+            {
+              "question": "At the start: CARE INTO",
+              "answer": "CARE INTO = CREATION"
+            }
+          ]
+        },
+        {
+          "name": "Parables",
+          "questions": [
+            {
+              "question": "The kingdom of heaven is like this seed.",
+              "answer": "Mustard seed"
+            },
+            {
+              "question": "The kingdom of heaven is like this seed.",
+              "answer": "Mustard seed"
+            },
+            {
+              "question": "The kingdom of heaven is like this seed.",
+              "answer": "Mustard seed"
+            },
+            {
+              "question": "The kingdom of heaven is like this seed.",
+              "answer": "Mustard seed"
+            },
+            {
+              "question": "The kingdom of heaven is like this seed.",
+              "answer": "Mustard seed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 1",
+      "points": [100, 200, 300, 400, 500],
+      "categories": [
+        {
+          "name": "Did you pay attention?",
+          "shortName": "Pay attention?",
+          "questions": [
+            {
+              "question": "This name of God means <br>\"The Strong Creator\"",
+              "answer": "Elohim",
+              "notes": "This was last week's message."
+            },
+            {
+              "question": "Pastor uncle's message on Youth Sunday brought up this <br>\"Son of Encouragement\"",
+              "answer": "Barnabas"
+            },
+            {
+              "question": "The title of Rev Dr. Sam Kamaleson's message, in reference to the passage from Mark 1",
+              "answer": "The Rule of God",
+              "notes": "also accept the Kingdom of God"
+            },
+            {
+              "question": "The Lord asked Hosea to name his son this, which means <br>\"not my people\"",
+              "answer": "Lo-Ammi (Hosea 1:8)"
+            },
+            {
+              "question": "The Hebrew name of God as given in <br>Psalm 10:16",
+              "answer": "Yahweh Melek"
+            }
+          ]
+        },
+        {
+          "name": "Biblical Art",
+          "questions": [
+            {
+              "question": "\"The Last Supper\" found in Santa Maria <br>delle Grazie in Milan was painted by this artist",
+              "image": "/img/cci2018/last-supper.jpg",
+              "answer": "Leonardo da Vinci"
+            },
+            {
+              "question": "The passion scene can be found in this masterpiece <br>of Gaudi in Barcelona",
+              "image": "/img/cci2018/passion.jpg",
+              "imageCss": "top: -200px",
+              "answer": "La Sagrada Familia"
+            },
+            {
+              "question": "The set of 28 statues found in Notre Dame <br>cathedral represents these people.",
+              "image": "/img/cci2018/notre-dame.jpg",
+              "imageCss": "top: -200px",
+              "answer": "Kings of Israel"
+            },
+            {
+              "question": "Biblical reference for this art by Ivan Guaderrama <br>(Book, Chapter & Verse)",
+              "image": "/img/cci2018/amor.jpg",
+              "imageCss": "top: -100px",
+              "answer": "I Corinthians 13:13"
+            },
+            {
+              "question": "The most common image of Jesus in Orthodox <br>Christianity is called this.",
+              "image": "/img/cci2018/coptic.png",
+              "answer": "Pantokrator (Lord of Hosts / God Almighty)"
+            }
+          ]
+        },
+        {
+          "name": "Fun n Pun",
+          "questions": [
+            {
+              "question": "Boaz was this kind of man before his marriage",
+              "answer": "Ruthless"
+            },
+            {
+              "question": "They call Pastors in Germany this",
+              "answer": "German Shepherds"
+            },
+            {
+              "question": "He was the greatest comedian in the Bible",
+              "answer": "Samson. He brought the house down!"
+            },
+            {
+              "question": "This Bible character had no parents.",
+              "answer": "Joshua, son of Nun."
+            },
+            {
+              "question": "This area of the Middle East was especially wealthy.",
+              "answer": "The area around river Jordan. The banks were always overflowing!"
+            }
+          ]
+        },
+        {
+          "name": "Numero Uno",
+          "questions": [
+            {
+              "question": "Do not merely listen to the word, he writes, and so deceive yourselves. Do what it says.",
+              "answer": "James"
+            },
+            {
+              "question": "Job went to this city and found a ship going to Tarshish",
+              "answer": "Joppa"
+            },
+            {
+              "question": "John was baptizing at this place, beyond the River Jordan",
+              "answer": "Bethany / Bethabara (John 1:28)"
+            },
+            {
+              "question": "Paul writes about this person - \"So if you consider me a partner, welcome him as you would welcome me\"",
+              "answer": "Onesimus (Philemon 1:17)"
+            },
+            {
+              "question": "His celebrations as self declared King of Israel was very very short lived",
+              "answer": "Adonijah (I Kings 1)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "points": [100, 200, 300, 400, 500],
+      "categories": [
+        {
+          "name": "Block\"chain\"",
+          "questions": [
+            {
+              "question": "Is not this the kind of ____ I have chosen: to loose the chains of injustice and untie the cords of the yoke",
+              "answer": "fasting (Isaiah 58:6)"
+            },
+            {
+              "question": "Solomon in Proverbs 1 says these are a chain to adorn your neck",
+              "answer": "father's instruction & mother's teaching (NIV)"
+            },
+            {
+              "question": "This man lived in the tombs, and no one could bind him anymore, not even with a chain",
+              "answer": "Legion (Mark 5:9)"
+            },
+            {
+              "question": "The Lord asks Job if he can bind the chains of this star cluster <br>that has 500 stars and is 410 light years away! ",
+              "image": "/img/cci2018/stars.jpg",
+              "answer": "Pleiades (Job 38:31)",
+              "notes" : "This is also called as Agni Nakshatiram & Karthigai in Tamil"
+            },
+            {
+              "question": "These Priestly garments were set with braided chains of pure gold.",
+              "answer": "The Ephod and Breastplate"
+            }
+          ]
+        },
+        {
+          "name": "A.I.",
+          "questions": [
+            {
+              "question": "Godliness with contentment is great ____",
+              "answer": "gain (I Timothy 6:6)"
+            },
+            {
+              "question": "It is commonly agreed that Jesus and his disciples spoke this language.",
+              "answer": "Aramaic"
+            },
+            {
+              "question": "In Romans 15, Paul says he wants to visit the people of Rome on his way to this country.",
+              "answer": "Spain"
+            },
+            {
+              "question": "Jude writes about ungodly people \"Woe to them! For they walked in the way of ___\"",
+              "answer": "Cain (Jude 1:11)"
+            },
+            {
+              "question": "This city is surrounded by Mount Carmel",
+              "image": "/img/cci2018/haifa.jpg",
+              "imageCss": "top: -200px",
+              "answer": "Haifa"
+            }
+          ]
+        },
+        {
+          "name": "\"Big\" Data",
+          "questions": [
+            {
+              "question": "It was three hundred cubits long, fifty cubits wide and thirty cubits high",
+              "answer": "Noah's Ark (Genesis 6:15)"
+            },
+            {
+              "question": ">7.5x10<sup>18</sup> of these.. Your thoughts about me O God!",
+              "answer": "Grains of sand (Psalm 139:17,18)"
+            },
+            {
+              "question": "Job, you can't mess with the real thing, but <br>rather buy this Fortnite skin for 2000 vbucks!",
+              "image": "/img/cci2018/levi.jpg",
+              "answer": "Leviathan"
+            },
+            {
+              "question": "Solomon, in his temple, made a big basin measuring 45 feet in circumference, called as this.",
+              "answer": "The Sea (II Chronicles 4:2)"
+            },
+            {
+              "question": "Exploration Report: Those giants are <br>so big! We look like grasshoppers <br>before them!!",
+              "answer": "Nephilim - Descendents of Anak (Numbers 13:33)"
+            }
+          ]
+        },
+        {
+          "name": "\"Voice\" Assistants",
+          "questions": [
+            {
+              "question": "This 360 member choir founded in 1847 <br>has performed for Presidential inaugurations",
+              "video": "/img/cci2018/vid/mormon.mp4",
+              "answer": "Mormon Tabernacle Choir"
+            },
+            {
+              "question": "This author's song was the most powerful hymn <br>of the Reformation Movement",
+              "video": "/img/cci2018/vid/mighty1.mp4",
+              "answer": "Martin Luther"
+            },
+            {
+              "question": "This Orchestra founded by A.J.Sathya was the most popular in 80's",
+              "video": "/img/cci2018/vid/unnadathin.mp4",
+              "answer": "Grace Lodge Orchestra"
+            },
+            {
+              "question": "Name of the lead vocalist who also composed <br>the song heard here.",
+              "video": "/img/cci2018/vid/imagine.mp4",
+              "answer": "Bart Millard (MercyMe)"
+            },
+            {
+              "question": "This singer has performed many hugely popular traditional Tamil songs",
+              "video": "/img/cci2018/vid/kattadam1.mp4",
+              "answer": "R. Jesiah"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
