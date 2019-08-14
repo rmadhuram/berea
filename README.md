@@ -64,5 +64,8 @@ Replace localhost with the IP of the server on the controller screen.
 #### A Clue
 ![](docs/scr4.png)
 
-#### An image clue
+#### A Picture Clue
 ![](docs/scr5.png)
+
+#### A Video Clue
+![](docs/scr6.png)
