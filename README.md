@@ -51,3 +51,10 @@ Replace localhost with the IP of the server on the controller screen.
 
 ![Opening screen](docs/opening.png)
 
+![](docs/scr1.png)
+
+![](docs/scr2.png)
+
+![](docs/scr3.png)
+
+![](docs/scr4.png)
