@@ -32,8 +32,22 @@ There are two screens:
 - A **show screen** visible to the audience, and most likely projected on to a big screen.
 - A **controller screen** visible only to the quiz master.
 
-The show screen should be a browser window in full screen mode, and the controller 
+The show screen should be a browser window in full screen mode 
+(could be running on the same computer as the server), and the controller 
 screen should be a browser, preferably on a handheld device. Both devices should be on the
 **same** network.
 
+The show screen is initialized using this URL
+
+`http://localhost:8080/game/init`
+
+The controller screen is initialized using this URL
+
+`http://localhost:8080/ctrl/init`
+
+Replace localhost with the IP of the server on the controller screen.
+
+## Show Screen
+
 ![Opening screen](docs/opening.png)
+
