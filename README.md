@@ -87,11 +87,11 @@ and was focusing more on being functional and fail-proof. I will make these bett
 
 #### Game Definition File
 The quiz program is controlled by a simple JSON file. It is currently hardcoded in `data/cci2018/game.json`.
-Change that file to create your own quiz game.
+Modify that file to create your own quiz game.
 
 #### Game State File
 After every action, the program saves the game state. In case of a crash/power outage etc.,
 re-starting the program will cause it to start from where it was left off. This game state is 
 stored in the file `data/game-state.json`.
 
-**Important:** If you don't want to resume from last game, please delete the game state file before starting the show.
+*Important:* If you don't want to resume from last game, please delete the game state file before starting the show.
