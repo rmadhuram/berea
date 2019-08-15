@@ -47,7 +47,7 @@ The controller screen is initialized using this URL
 
 Replace localhost with the IP of the server on the controller screen.
 
-## Show Screen
+## Show Screens
 
 #### Opening Screen
 ![Opening screen](docs/opening.png)
@@ -69,3 +69,29 @@ Replace localhost with the IP of the server on the controller screen.
 
 #### A Video Clue
 ![](docs/scr6.png)
+
+## Control Screens
+I know these screens are really ugly, but I programmed it just the day before the retreat, 
+and was focusing more on being functional and fail-proof. I will make these better as I find time :)
+
+#### Init Screen
+![](docs/ctrl-init.png)
+
+#### Board Screen
+![](docs/ctrl-board.png)
+
+#### Clue Screen
+![](docs/ctrl-question.png)
+
+## Preparing a Quiz
+
+#### Game Definition File
+The quiz program is controlled by a simple JSON file. It is currently hardcoded in `data/cci2018/game.json`.
+Modify that file to create your own quiz game.
+
+#### Game State File
+After every action, the program saves the game state. In case of a crash/power outage etc.,
+re-starting the program will cause it to start from where it was left off. This game state is 
+stored in the file `data/game-state.json`.
+
+*Important:* If you don't want to resume from last game, please delete the game state file before starting the show.
