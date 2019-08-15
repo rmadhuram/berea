@@ -72,7 +72,8 @@ Replace localhost with the IP of the server on the controller screen.
 
 ## Control Screens
 I know these screens are really ugly, but I programmed it just the day before the retreat, 
-and was focusing more on being functional and fail-proof. I will make these better as I find time :)
+and was focusing more on being functional and fail-proof (plus only I can see them :)). 
+I will make these better as I find time :)
 
 #### Init Screen
 ![](docs/ctrl-init.png)
