@@ -12,6 +12,7 @@ import './modules/game/answer';
 import './modules/game/announce';
 import './modules/game/score';
 import './modules/controller/controller.module';
+import './modules/wwbam/wwbam.module';
 import './config/env';
 
 angular.module('jeopardy',
@@ -23,6 +24,7 @@ angular.module('jeopardy',
    'services',
    'env',
    'game',
+   'wwbam',
    'controller',
    'ngMaterial'
   ])
