@@ -1,0 +1,640 @@
+[
+  {
+    "level": 1,
+    "q": "In which town was Jesus born?",
+    "c": [
+      "Bethlehem",
+      "Jerusalem",
+      "New York",
+      "Bethsaida"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Who was the mother of Abel?",
+    "c": [
+      "Eve",
+      "Esther",
+      "Ruth",
+      "Abigail"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "What was three hundred cubits long, fifty cubits wide and thirty cubits high?",
+    "c": [
+      "Noah's Ark",
+      "Jerusalem Temple",
+      "Ark of the covenent",
+      "Behemoth"
+    ],
+    "r": "Genesis 6:15"
+  },
+  {
+    "level": 4,
+    "q": "What age was Noah when the floodwaters came on earth?",
+    "c": [
+      "600",
+      "479",
+      "765",
+      "700"
+    ],
+    "r": "Genesis 7:6"
+  },
+  {
+    "level": 3,
+    "q": "\"Don’t call me Naomi,\" she told them. \"Call me ____ because the Almighty has made my life very bitter.\"",
+    "c": [
+      "Mara",
+      "Ruth",
+      "Orpah",
+      "Leah"
+    ],
+    "r": "Ruth 1:20"
+  },
+  {
+    "level": 2,
+    "q": "What seed is the kingdom of God compared to?",
+    "c": [
+      "Mustard seed",
+      "Sunflower seed",
+      "Seed that fell on rocks",
+      "Mango seed"
+    ],
+    "r": "Mark 4:31"
+  },
+  {
+    "level": 5,
+    "q": "Which king of Israel had the shortest reign?",
+    "c": [
+      "Zimri",
+      "Elah",
+      "Omri",
+      "Adonijah"
+    ],
+    "r": "7 days - I Kings 16:15"
+  },
+  {
+    "level": 4,
+    "q": "Jesus told the Pharisees that their generation will be responsible for the blood of all prophets who were killed, from Abel to _____",
+    "c": [
+      "Zechariah",
+      "Amos",
+      "Malachi",
+      "Habakkuk"
+    ],
+    "r": "Luke 11:51"
+  },
+  {
+    "level": 1,
+    "q": "Which boy did The Lord call when he was ministering under Eli?",
+    "c": [
+      "Samuel",
+      "David",
+      "Joseph",
+      "Jonah"
+    ],
+    "r": "I Samuel 3:2"
+  },
+  {
+    "level": 1,
+    "q": "Which giant did David kill with a slingshot?",
+    "c": [
+      "Goliath",
+      "Giant Robot",
+      "Hulk",
+      "Leviathan"
+    ],
+    "r": ""
+  },
+  {
+    "level": 4,
+    "q": "Around the throne mentioned in Revelations, there were four living creatures. What was the second creature like?",
+    "c": [
+      "Ox",
+      "Lion",
+      "Man",
+      "Eagle"
+    ],
+    "r": "Rev 4:7"
+  },
+  {
+    "level": 4,
+    "q": "Which of these is not a tribe of Israel?",
+    "c": [
+      "Simon",
+      "Zebulun",
+      "Asher",
+      "Reuben"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "Which great star, blazing like a torch, fell from the sky when the third angel sounded his trumpet?",
+    "c": [
+      "Wormwood",
+      "Satan",
+      "Apollyon",
+      "Abaddon"
+    ],
+    "r": "Rev 8:11"
+  },
+  {
+    "level": 3,
+    "q": "The book of Obadiah is a prophecy concerning which people?",
+    "c": [
+      "Edomites",
+      "Amalekites",
+      "Israelites",
+      "Moabites"
+    ],
+    "r": "Oba 1:1"
+  },
+  {
+    "level": 2,
+    "q": "The Lord asked Jonah to go to which city?",
+    "c": [
+      "Nineveh",
+      "Tarshish",
+      "Joppa",
+      "Jerusalem"
+    ],
+    "r": "Jonah 1:1"
+  },
+  {
+    "level": 2,
+    "q": "What did God create on the first day of creation?",
+    "c": [
+      "Light",
+      "Stars",
+      "Water",
+      "Animals"
+    ],
+    "r": "Genesis 1:3"
+  },
+  {
+    "level": 3,
+    "q": "Which of these is NOT a river that flowed from Eden?",
+    "c": [
+      "Jordan",
+      "Euphrates",
+      "Tigris",
+      "Gihon"
+    ],
+    "r": "Genesis 2:10"
+  },
+  {
+    "level": 1,
+    "q": "Which animal was more crafty than any of the wild animals the Lord had made?",
+    "c": [
+      "Serpent",
+      "Lion",
+      "Tiger",
+      "Wolf"
+    ],
+    "r": "Gen 3:1"
+  },
+  {
+    "level": 2,
+    "q": "Who lived the longest according to the Bible?",
+    "c": [
+      "Methuselah",
+      "Noah",
+      "Lamech",
+      "Adam"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "What was the first bird Noah sent out from the ark?",
+    "c": [
+      "Raven",
+      "Dove",
+      "Eagle",
+      "Pigeon"
+    ],
+    "r": "Gen 8:7"
+  },
+  {
+    "level": 1,
+    "q": "After the flood, what was the sign of the covenent God established with all living creatures?",
+    "c": [
+      "Rainbow",
+      "Peacock",
+      "Lightning",
+      "Mirage"
+    ],
+    "r": "Gen 9:12"
+  },
+  {
+    "level": 3,
+    "q": "What was built at Shinar?",
+    "c": [
+      "Tower of Babel",
+      "Great Pyramid",
+      "Hanging Garden",
+      "Golden Calf"
+    ],
+    "r": "Gen 11:1-4"
+  },
+  {
+    "level": 3,
+    "q": "Who was the father of Abraham?",
+    "c": [
+      "Terah",
+      "Haran",
+      "Shem",
+      "Noah"
+    ],
+    "r": "Gen 11:27"
+  },
+  {
+    "level": 5,
+    "q": "Which of these country names is NOT mentioned in the Bible?",
+    "c": [
+      "Algeria",
+      "Spain",
+      "India",
+      "Libya"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "What does 'Jehovah Jireh' mean?",
+    "c": [
+      "God who provides",
+      "God our righteousness",
+      "God who heals",
+      "God our shepherd"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Who was the son of Cush who became a mighty warrior on the earth?",
+    "c": [
+      "Nimrod",
+      "Esau",
+      "Samson",
+      "Solomon"
+    ],
+    "r": "Gen 10:8"
+  },
+  {
+    "level": 3,
+    "q": "What did Jacob name the place where he wrestled with God?",
+    "c": [
+      "Peniel",
+      "Rehoboth",
+      "Ebenezer",
+      "Sitnah"
+    ],
+    "r": "Gen 32:30"
+  },
+  {
+    "level": 4,
+    "q": "What was the original name of Bethel, where Jacob dreamt of seeing angels and God?",
+    "c": [
+      "Luz",
+      "El-Bireh",
+      "Gilgal",
+      "Beitin"
+    ],
+    "r": "Gen 28:19"
+  },
+  {
+    "level": 2,
+    "q": "Which of Joseph's brothers tried to rescue him when others plotted to kill him?",
+    "c": [
+      "Reuben",
+      "Levi",
+      "Simeon",
+      "Benjamin"
+    ],
+    "r": "Gen 37:21"
+  },
+  {
+    "level": 3,
+    "q": "How many cows appeared in Pharoh's dream? ",
+    "c": [
+      "14",
+      "7",
+      "12",
+      "100"
+    ],
+    "r": "Gen 41:2-3"
+  },
+  {
+    "level": 4,
+    "q": "How many chapters are there in the Bible?",
+    "c": [
+      "1189",
+      "1241",
+      "929",
+      "2078"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "What are the first five books of the Bible called?",
+    "c": [
+      "Pentateuch",
+      "Historical Books",
+      "Pentagon",
+      "Pentarch"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "How many books of the Bible have only one chapter?",
+    "c": [
+      "5",
+      "4",
+      "3",
+      "7"
+    ],
+    "r": "Obadiah, Philemon, II and III John, Jude"
+  },
+  {
+    "level": 2,
+    "q": "Who threw his staff in front of the Pharaoh, and it became a snake?",
+    "c": [
+      "Aaron",
+      "Moses",
+      "Miriam",
+      "Eleazar"
+    ],
+    "r": "Exodus 7:10"
+  },
+  {
+    "level": 4,
+    "q": "What is the ceremonial dinner the Jews observe on the first night of Passover called?",
+    "c": [
+      "Sader",
+      "Afikomen",
+      "Chametz",
+      "Karpas"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "God brought the Israelites from Egypt in the first month of Hebrew Calendar. Which month is it?",
+    "c": [
+      "Nisan",
+      "Sivan",
+      "Shevat",
+      "Adar"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What was white like coriander seed and tasted like wafers made with honey?",
+    "c": [
+      "Manna",
+      "Matzo",
+      "Challah",
+      "Pita"
+    ],
+    "r": "Exodus 16:31"
+  },
+  {
+    "level": 3,
+    "q": "Of the ten commandments, what does the sixth commandment deal with?",
+    "c": [
+      "Murder",
+      "Stealing",
+      "False Testimony",
+      "Sabbath"
+    ],
+    "r": ""
+  },
+  {
+    "level": 4,
+    "q": "What type of wood was used to make the Ark of the Covenent?",
+    "c": [
+      "Acacia",
+      "Cedar",
+      "Cypress",
+      "Poplar"
+    ],
+    "r": "Exodus 25:10"
+  },
+  {
+    "level": 4,
+    "q": "In which priestly garment was the Urim and Thummim placed?",
+    "c": [
+      "Breastplate",
+      "Ephod",
+      "Pomegranate",
+      "Bells"
+    ],
+    "r": "Exodus 28:30"
+  },
+  {
+    "level": 3,
+    "q": "Who held up Moses' hands while Israel was in battle?",
+    "c": [
+      "Aaron and Hur",
+      "Joshua and Caleb",
+      "Nadab and Abihu",
+      "Eleazar and Ithamar"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "According to Exodus 26, what divided the holy place and the Most Holy? ",
+    "c": [
+      "Veil",
+      "Brazen altar",
+      "Candle sticks",
+      "Altar of Incense"
+    ],
+    "r": "Exodus 26:33"
+  },
+  {
+    "level": 4,
+    "q": "Who did the Lord call and appoint to make the items for the tabernacle and the priesthood?",
+    "c": [
+      "Bezalel",
+      "Beelzebub",
+      "Beersheba",
+      "Benhoida"
+    ],
+    "r": "Exodus 31:2"
+  },
+  {
+    "level": 3,
+    "q": "Who cut the second set of tablets of stone?",
+    "c": [
+      "Moses",
+      "God",
+      "Aaron",
+      "Joshua"
+    ],
+    "r": "Exodus 34:1-4"
+  },
+  {
+    "level": 4,
+    "q": "Which tribe was not numbered?",
+    "c": [
+      "Levi",
+      "Benjamin",
+      "Dan",
+      "Judah"
+    ],
+    "r": "Num 1:47-49"
+  },
+  {
+    "level": 2,
+    "q": "What did the Lord send while the meat was still between their teeth? ",
+    "c": [
+      "Severe plague",
+      "Fire",
+      "Lightning",
+      "Serpents"
+    ],
+    "r": "Num 11:33"
+  },
+  {
+    "level": 4,
+    "q": "What did the rod with Aaron's name blossom and produce?",
+    "c": [
+      "Almonds",
+      "Walnuts",
+      "Olives",
+      "Cashews"
+    ],
+    "r": "Num 17:8"
+  },
+  {
+    "level": 2,
+    "q": "What did Balak want Balaam to do?",
+    "c": [
+      "Curse Israel",
+      "Bless Israel",
+      "Bless him",
+      "Fight against Israel"
+    ],
+    "r": "Num 22:11"
+  },
+  {
+    "level": 3,
+    "q": "When Balaam went with the princes of Moab what stood in his path? ",
+    "c": [
+      "An angel of the Lord",
+      "A donkey",
+      "A flame of fire",
+      "A prophet of the Lord"
+    ],
+    "r": "Num 22:22"
+  },
+  {
+    "level": 2,
+    "q": "Who hid the men that Joshua sent to spy out Jericho?",
+    "c": [
+      "Rahab",
+      "Rachel",
+      "Rebekah",
+      "Ruth"
+    ],
+    "r": "Joshua 2:1-8"
+  },
+  {
+    "level": 1,
+    "q": "What city's walls did Joshua and his men encircle and it came tumbling down?",
+    "c": [
+      "Jericho",
+      "Nineveh",
+      "Gilgal",
+      "Ai"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "Whose bones were buried at Shechem?",
+    "c": [
+      "Joseph",
+      "Joshua",
+      "Caleb",
+      "Moses"
+    ],
+    "r": "Joshua 24:32"
+  },
+  {
+    "level": 1,
+    "q": "Who said \"As for me and my house, we will serve the LORD?\" ",
+    "c": [
+      "Joshua",
+      "Caleb",
+      "Joseph",
+      "Moses"
+    ],
+    "r": "Joshua 24:15"
+  },
+  {
+    "level": 2,
+    "q": "Which woman judged Israel?",
+    "c": [
+      "Deborah",
+      "Jael",
+      "Esther",
+      "Ruth"
+    ],
+    "r": "Judges 4:4"
+  },
+  {
+    "level": 4,
+    "q": "What sign did God give Gideon showing that God would save Israel by him?",
+    "c": [
+      "Fleece of wool",
+      "Manna",
+      "Rod that budded",
+      "Sun dial"
+    ],
+    "r": "Judges 6:36 - 40"
+  },
+  {
+    "level": 5,
+    "q": "How did the Gileadites determine if a man was an Ephraimite?",
+    "c": [
+      "If he could not pronounce Shibboleth",
+      "By the way he walked",
+      "By the way he observed Passover",
+      "If he could not write Bevashka"
+    ],
+    "r": "Judges 12:6"
+  },
+  {
+    "level": 2,
+    "q": "What did Samson kill with his bare hands?",
+    "c": [
+      "A young lion",
+      "A bear",
+      "A wolf",
+      "A Philistine"
+    ],
+    "r": "Judges 14:5-6"
+  },
+  {
+    "level": 3,
+    "q": "How many foxes did Samson catch and set their tails on fire to destroy the corn of the Philistines? ",
+    "c": [
+      "300",
+      "100",
+      "30",
+      "500"
+    ],
+    "r": "Judges 15:4-5"
+  }
+]
