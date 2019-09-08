@@ -30,6 +30,14 @@
         flex-grow: 1;
       }
     }
+
+    h2 {
+      padding: 0 200px;
+    }
+
+    .bible {
+      color: red;
+    }
   }
 
   .mid-row {
@@ -42,7 +50,7 @@
   .bottom-section {
     flex-grow: 1;
     display: flex;
-    background: #dbecb4;
+    background: linear-gradient(45deg, #cbeac5, #ebf7f0);
 
     .rules {
       color: #333;

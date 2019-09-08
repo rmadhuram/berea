@@ -12,6 +12,11 @@ angular.module('wwbam', ['ngSanitize'])
         url: 'wwbam-q',
         templateUrl: 'app/modules/wwbam/question.html',
         controller: 'WWBAMQuestionController'
+      })
+      .state('root.wwbam-thanks', {
+        url: 'wwbam-thanks',
+        templateUrl: 'app/modules/wwbam/thanks.html',
+        controller: 'WWBAMThanksController'
       });
 
   })
@@ -24,8 +29,13 @@ angular.module('wwbam', ['ngSanitize'])
     }
 
   })
-  .controller('WWBAMQuestionController', function($scope, $log, wwbamService, $timeout, $interval) {
+  .controller('WWBAMQuestionController', function($scope, $log, wwbamService, $timeout, $interval, $state) {
     'ngInject'
+
+    $scope.isFrozen = false
+    $scope.wrongAnswer = false
+    $scope.rightAnswer = false
+    $scope.currentLevel = 0
 
     function nextQuestion() {
       stopTimer()
@@ -33,12 +43,27 @@ angular.module('wwbam', ['ngSanitize'])
       $scope.wrongAnswer = false
       $scope.rightAnswer = false
       $scope.currentLevel++
+      if ($scope.currentLevel > 5) {
+        // finished all
+        $timeout(() => {
+          $state.transitionTo('root.wwbam-thanks');
+        }, 3000)
+        return
+      }
+
       $scope.question = $scope.questions[$scope.currentLevel - 1]
-      playMusic('1001000')
+      if ($scope.currentLevel < 3) {
+        playMusic('1001000')
+      } else {
+        playMusic('125000')
+      }
+
       startTimer()
     }
 
     function playMusic(file) {
+      if (!file) return;
+      $log.info('file: ', file)
       $timeout(() => {
         $('#q-audio-src')[0].src = `/img/wwbam/sounds/${file}.mp3`
         $('#q-audio')[0].load()
@@ -79,6 +104,10 @@ angular.module('wwbam', ['ngSanitize'])
           choice.showCorrect = true
         }
       }
+
+      $timeout(() => {
+        $state.transitionTo('root.wwbam-thanks');
+      }, 6000)
     }
 
     $scope.chooseOption = function(option) {
@@ -112,6 +141,8 @@ angular.module('wwbam', ['ngSanitize'])
 
     $log.info('init WWBAMController');
     wwbamService.getQuestions().then((questions) => {
+      questions = angular.fromJson(angular.toJson(questions))
+
       // shuffle answers
       questions.map(q => {
         q.c = q.c.map(choice => {
@@ -134,12 +165,18 @@ angular.module('wwbam', ['ngSanitize'])
       })
 
       $scope.questions = questions
-      $scope.currentLevel = 0
       nextQuestion()
     })
 
-    $scope.currentLevel = 1;
-
     playMusic('1001000')
 
-  });
+  })
+  .controller('WWBAMThanksController', function($log, $scope, $state) {
+    'ngInject'
+
+    $log.info('init WWBAMThanksController');
+    $scope.finish = function() {
+      $state.transitionTo('root.wwbam');
+    }
+
+  })

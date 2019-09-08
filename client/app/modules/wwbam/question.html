@@ -18,6 +18,9 @@
       <div class="question" >
         <p class="animated fadeIn delay-2s">{{question.q}}</p>
       </div>
+      <div class="rw animated fadeIn delay-2s" ng-class="{right: rightAnswer, wrong: wrongAnswer}">
+        {{rightAnswer ? 'CORRECT!!' : 'SORRY.. WRONG!!'}}
+      </div>
     </div>
   </div>
   <div class="bottom-section">

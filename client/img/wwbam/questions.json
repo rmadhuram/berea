@@ -89,7 +89,7 @@
   },
   {
     "level": 1,
-    "q": "Which boy did The Lord call when he was ministering under Eli?",
+    "q": "Which boy did the Lord call when he was ministering under Eli?",
     "c": [
       "Samuel",
       "David",
@@ -636,5 +636,401 @@
       "500"
     ],
     "r": "Judges 15:4-5"
+  },
+  {
+    "level": 1,
+    "q": "How many books are in the New Testament? ",
+    "c": [
+      "27",
+      "21",
+      "39",
+      "29"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What type of insect did John the Baptist eat in the desert? ",
+    "c": [
+      "Locusts",
+      "Hamburgers",
+      "Beetles",
+      "Ants"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Who were the first apostles called to follow Jesus? ",
+    "c": [
+      "Peter and Andrew",
+      "James and John",
+      "Peter and John",
+      "Peter and James"
+    ],
+    "r": "Matthew 4:18–22"
+  },
+  {
+    "level": 1,
+    "q": "After Jesus was arrested, which apostle disowned him three times? ",
+    "c": [
+      "Peter",
+      "John",
+      "Matthew",
+      "Luke"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Paul was shipwrecked on what island? ",
+    "c": [
+      "Malta",
+      "Cyprus",
+      "Fiji",
+      "Gibraltar"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "What is the shortest book in the New Testament? ",
+    "c": [
+      "II John",
+      "Jude",
+      "III John",
+      "Philemon"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "To what city was Saul traveling when he encountered a great and blinding light? ",
+    "c": [
+      "Damascus",
+      "Tarsus",
+      "Rome",
+      "Galilee"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "What tribe is Paul from? ",
+    "c": [
+      "Benjamin",
+      "Reuben",
+      "Levi",
+      "Joseph"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Which Gospel is written by a doctor? ",
+    "c": [
+      "Luke",
+      "Mark",
+      "Matthew",
+      "John"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "On what island was John when he was given the vision of Revelation?",
+    "c": [
+      "Patmos",
+      "Malta",
+      "Mykonos",
+      "Crete"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Where was Jesus crucified?",
+    "c": [
+      "Golgotha",
+      "Cana",
+      "Capernaum",
+      "Gennesaret"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Which two Old Testament characters appeared with Jesus at the transfiguration?",
+    "c": [
+      "Elijah and Moses",
+      "Elijah and Elisha",
+      "Elisha and Moses",
+      "Elijah and Abraham"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Who wrote Acts of Apostles?",
+    "c": [
+      "Luke",
+      "Paul",
+      "John",
+      "James"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "What did the Holy Spirit look like when the disciples received it? ",
+    "c": [
+      "Tongues of fire",
+      "Dove",
+      "Lightning Bolt",
+      "Stream of water"
+    ],
+    "r": "Acts 2:3"
+  },
+  {
+    "level": 4,
+    "q": "How many days was Lazarus dead before Jesus brought him back to life?",
+    "c": [
+      "Four",
+      "Three",
+      "Two",
+      "Seven"
+    ],
+    "r": "John 11:17"
+  },
+  {
+    "level": 2,
+    "q": "One title of God is El Shaddai, which means what?",
+    "c": [
+      "Almighty God",
+      "God the healer",
+      "God our provider",
+      "Righteous God"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Who was the wicked queen that wanted to kill the prophet Elijah? ",
+    "c": [
+      "Jezebel",
+      "Queen of Sheba",
+      "Queen Vashti",
+      "Tahpenes"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "The name of this city means \"Well of the Oath\". Abraham and Abimelech setlled their differences here. What city is it?",
+    "c": [
+      "Beersheba",
+      "Bethany",
+      "En-hakkore",
+      "En Gedi"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "The Lord asks Job if he can chain which star cluster?",
+    "c": [
+      "Pleiades",
+      "Hyades",
+      "Cepheids",
+      "Orion Nebula"
+    ],
+    "r": "Job 38:31"
+  },
+  {
+    "level": 4,
+    "q": "Jude writes about ungodly people \"Woe to them! For they walked in the way of ___\"",
+    "c": [
+      "Cain",
+      "Samson",
+      "Jezebel",
+      "Manasseh"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Where did Joseph and Mary go when fleeing from Herod?",
+    "c": [
+      "Egypt",
+      "Babylon",
+      "Galilee",
+      "Nazareth"
+    ],
+    "r": "Matt 2:13"
+  },
+  {
+    "level": 4,
+    "q": "What were the Hebrew names of Daniel's three friends?",
+    "c": [
+      "Mishael, Azariah and Hananiah",
+      "Jereboam, Reheboam and Omri",
+      "Ham, Japheth and Shem",
+      "Shadrach, Meshach and Abednego"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "When David brought the Ark of the Covenant back to the city of David, he danced unto the Lord. Who was offended by this?",
+    "c": [
+      "Michal",
+      "Saul",
+      "Samuel",
+      "Nathan"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "Who is the man from Elkosh who prophesied the fall of Nineveh.",
+    "c": [
+      "Nahum",
+      "Jonah",
+      "Amos",
+      "Haggai"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "On which mountain did Saul die?",
+    "c": [
+      "Gilboah",
+      "Tabor",
+      "Sinai",
+      "Moriah"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "What was David's capital before he took Jerusalem?",
+    "c": [
+      "Hebron",
+      "Carmel",
+      "Bethlehem",
+      "Ein Gedi"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "What is the highest ranking angel in Christian theology?",
+    "c": [
+      "Seraphim",
+      "Cherubim",
+      "Archangels",
+      "Thrones"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "What is the language of New Testament?",
+    "c": [
+      "Koine Greek",
+      "Aramaic",
+      "Latin",
+      "Hebrew"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "When Lot’s wife looked back, what did she become?",
+    "c": [
+      "A pillar of salt",
+      "A pillar of ice",
+      "A pillar of fire",
+      "A pillar of stone"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What river was Jesus baptized in?",
+    "c": [
+      "Jordan",
+      "Euphrates",
+      "Nile",
+      "Tigris"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What kind of work did Zacchaeus do?",
+    "c": [
+      "Tax collector",
+      "Cobbler",
+      "Soldier",
+      "Centurion"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Who wore the coat of many colors? ",
+    "c": [
+      "Joseph",
+      "Jacob",
+      "Benjamin",
+      "Moses"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "How many times did Peter deny Jesus? ",
+    "c": [
+      "Three",
+      "Four",
+      "One",
+      "Two"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "What is the name of the storm winds which can hit Crete, as recorded in Acts?",
+    "c": [
+      "Euroklydon",
+      "Cierzo",
+      "Gilavar",
+      "Marin"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What is the longest chapter in the Bible?",
+    "c": [
+      "Psalm 119 ",
+      "1 Kings 8",
+      "Deuteronomy 28",
+      "Numbers 7"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "What is the shortest chapter in the Bible?",
+    "c": [
+      "Psalm 117",
+      "Psalm 131",
+      "Psalm 133",
+      "Esther 10"
+    ],
+    "r": ""
   }
 ]

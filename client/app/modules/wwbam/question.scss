@@ -90,12 +90,31 @@
       border-radius: 30px;
       margin: 15px 30px;
       background: #120f59;
-      padding: 0 100px;
 
       .question {
         text-align: center;
         flex-grow: 1;
         font-size: 48px;
+        padding: 0 100px;
+      }
+
+      .rw {
+        position: absolute;
+        top: 150px;
+        text-align: center;
+        width: 100%;
+        font-size: 48px;
+        display: none;
+
+        &.right {
+          color: green;
+          display: block;
+        }
+
+        &.wrong {
+          color: red;
+          display: block;
+        }
       }
     }
   }
