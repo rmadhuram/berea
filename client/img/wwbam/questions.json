@@ -826,7 +826,7 @@
   },
   {
     "level": 5,
-    "q": "The name of this city means \"Well of the Oath\". Abraham and Abimelech setlled their differences here. What city is it?",
+    "q": "The name of this city means \"Well of the Oath\". Abraham and Abimelech settled their differences here. What city is it?",
     "c": [
       "Beersheba",
       "Bethany",
@@ -1030,6 +1030,193 @@
       "Psalm 131",
       "Psalm 133",
       "Esther 10"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Who went to Joppa instead of Nineveh?",
+    "c": [
+      "Jonah",
+      "Job",
+      "John",
+      "Jesus"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "In Matthew 12, Jesus calls himself greater than these two people.",
+    "c": [
+      "Jonah & Solomon",
+      "Jonah & Beelzebul",
+      "Pharisees & Solomon",
+      "Solomon & Beelzebul"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Who was chosen to replace Judas?",
+    "c": [
+      "Matthias",
+      "Josephus",
+      "Justus",
+      "Philemon"
+    ],
+    "r": ""
+  },
+  {
+    "level": 4,
+    "q": "Which of these people were not present when they began to speak in tongues?",
+    "c": [
+      "Cappadoceans",
+      "Libyans",
+      "Ethiopians",
+      "Arabs"
+    ],
+    "r": ""
+  },
+  {
+    "level": 4,
+    "q": "In which place did the early believers gather in?",
+    "c": [
+      "Solomon's Colonnade",
+      "David's Porch",
+      "Gennesaret",
+      "Caesarea Phillippi "
+    ],
+    "r": "Acts 5:12"
+  },
+  {
+    "level": 3,
+    "q": "Which apostle raised Dorcas from the dead?",
+    "c": [
+      "Peter",
+      "Paul",
+      "Philip",
+      "Jude"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Which sorcerer did Paul make temporarily blind?",
+    "c": [
+      "Elymas",
+      "Simeon",
+      "Manaen",
+      "Dionysius"
+    ],
+    "r": "Acts 13:11"
+  },
+  {
+    "level": 4,
+    "q": "What / Who are Assos, Mitylene and Chios?",
+    "c": [
+      "Places where Paul went",
+      "Believers in Rome",
+      "Pharisees",
+      "Wines of Greece"
+    ],
+    "r": "Acts 20:13"
+  },
+  {
+    "level": 2,
+    "q": "Where did Paul find the inscription \"TO AN UNKNOWN GOD\"?",
+    "c": [
+      "A temple in Athens",
+      "An altar in Phillipi",
+      "A Synagogue in Ephesus",
+      "A Sculpture in Rome"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "What is the last word in the New Testament?",
+    "c": [
+      "Amen",
+      "Hallelujah",
+      "Peace",
+      "Heaven"
+    ],
+    "r": ""
+  },
+  {
+    "level": 5,
+    "q": "The fundamental difference between Pharisees and Saducees is ",
+    "c": [
+      "Belief in Oral Law",
+      "The way they dress",
+      "Belief in Jesus",
+      "Their diet"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Who said this: \"If thou be the Son of God, command that these stones be made bread.\"",
+    "c": [
+      "Satan",
+      "A Sadducee",
+      "A Pharisee",
+      "A Samaritan"
+    ],
+    "r": ""
+  },
+  {
+    "level": 2,
+    "q": "Who said this: \"Good Master, what shall I do to inherit eternal life?\"",
+    "c": [
+      "A Rich Ruler",
+      "A Sadducee",
+      "A Publican",
+      "A Soldier"
+    ],
+    "r": ""
+  },
+  {
+    "level": 3,
+    "q": "Who said this? \"Almost thou persuadest me to be a Christian.\" (NKJV)",
+    "c": [
+      "King Agrippa",
+      "Ponteus Pilate",
+      "King Herod",
+      "Saul"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Which of these books is NOT found in the Old Testament?",
+    "c": [
+      "Jude",
+      "Hosea",
+      "Amos",
+      "Joel"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Which of these books come first in order in the Old Testament?",
+    "c": [
+      "Exodus",
+      "Ruth",
+      "Ecclesiastes",
+      "Lamentations"
+    ],
+    "r": ""
+  },
+  {
+    "level": 1,
+    "q": "Who wrote the first five books of the Old Testament?",
+    "c": [
+      "Moses",
+      "Author Unknown",
+      "Abraham",
+      "Joshua"
     ],
     "r": ""
   }
