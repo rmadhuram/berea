@@ -12,6 +12,7 @@
     "md5": "^2.2.1",
     "minimist": "~0.0.8",
     "mongodb": "^3.0.5",
+    "natives": "^1.1.6",
     "nconf": "~0.6.9",
     "proxy-middleware": "^0.5.0",
     "scsslint": "0.0.3",

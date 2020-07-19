@@ -1,11 +1,15 @@
 .project
 .idea
 .tmp
+.history
+.DS_Store
 *.iml
 .scss-lint.yml
 .instance.pid
 nohup.out
 
+game-state.json
+package-lock.json
 npm-debug.log
 node_modules
 bower_components
